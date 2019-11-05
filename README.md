@@ -58,10 +58,10 @@
 ## Additional modifications needed (QRF Solutions)
 
 * Some modifications needed are:
-** Install SDAccel only at /software directory 
+    - Install SDAccel only at /software directory 
     - Check your uname -r command and see what is the kernel version.  Subsequently, install the kernel dev for that version
     - You would need to download the RPM from CENTOS archives
     - You can verify after installation if it is complete by checking /usr/lib/modules/$kernelversion
 
-** Source the env.sh file before starting
+* Source the env.sh file before starting
     - The env hardcoded variables have been changed to include env parameters
