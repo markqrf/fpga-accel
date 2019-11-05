@@ -26,7 +26,7 @@ script_path=${script%/*}
 realpath=$(readlink -f $script_path)
 
 echo $realpath
-FPGADESIGN_PATH=${realpath}/../../..
+FPGADESIGN_PATH=/home/$(hostname)/fpga-accel/FX600/sdaccel
 XOCLDRV_PATH=${FPGADESIGN_PATH}/software/kernel_drivers/xocl/driver/xclng/drm/xocl
 USERHAL_PATH=${FPGADESIGN_PATH}/software/userspace/sdaccel/driver/xclgemhal/driver/xclng/user_gem
 USERHALLIB_PATH=${USERHAL_PATH}/../../../../../lib/runtime/platforms/hal/driver

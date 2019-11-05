@@ -26,7 +26,7 @@ script_path=${script%/*}
 realpath=$(readlink -f $script_path)
 
 echo $realpath
-FPGADESIGN_PATH=${realpath}/../../..
+FPGADESIGN_PATH=/home/$(hostname)/fpga-accel/FX600/sdaccel
 XCLMGMT_DRV_PATH=${FPGADESIGN_PATH}/software/kernel_drivers/xclmgmt/driver/xclng/mgmt
 
 if [ -z $XILINX_SDX ]

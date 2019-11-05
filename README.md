@@ -55,5 +55,10 @@
 * Provides FLASH CTRL, HWICAP CTRL, and IIC MASTER components and example projects.
 
 
+## Additional modifications needed (QRF Solutions)
 
-
+* Some modifications needed are:
+** Install SDAccel only at /software directory 
+    - Check your uname -r command and see what is the kernel version.  Subsequently, install the kernel dev for that version
+    - You can verify this by checking /usr/lib/modules/$kernelversion
+** Source the env.sh file before starting
